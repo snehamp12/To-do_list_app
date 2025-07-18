@@ -5,6 +5,7 @@ body {
   justify-content: center;
   align-items: flex-start;
   padding: 50px;
+  margin: 0;
 }
 
 .container {
@@ -13,6 +14,7 @@ body {
   border-radius: 10px;
   width: 400px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
 }
 
 h1 {
@@ -21,7 +23,7 @@ h1 {
   color: #333;
 }
 
-.input-container {
+.input-section {
   display: flex;
   gap: 10px;
 }
@@ -32,6 +34,7 @@ input {
   font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  box-sizing: border-box;
 }
 
 button {
@@ -41,13 +44,12 @@ button {
   padding: 10px 15px;
   border-radius: 5px;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: 0.3s ease;
 }
 
 button:hover {
-  background-color: #3a7bd5;
+  background: #3a7bd5;
   color: white;
-  cursor: pointer;
 }
 
 ul {
@@ -64,17 +66,11 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transition: background 0.3s ease;
 }
 
 li.done {
   text-decoration: line-through;
   opacity: 0.6;
-}
-
-ul li:hover {
-  background: #f2f2f2;
-  cursor: pointer;
 }
 
 .delete-btn {
@@ -84,27 +80,31 @@ ul li:hover {
   padding: 5px 8px;
   border-radius: 3px;
   cursor: pointer;
-  transition: background 0.3s ease;
 }
 
-/* Mobile responsive */
+ul li:hover {
+  background: #f2f2f2;
+  cursor: pointer;
+}
+
+/* Mobile responsive styles */
 @media (max-width: 600px) {
-  .container {
-    width: 90%;
-    padding: 15px;
+  body {
+    padding: 20px;
   }
 
-  .input-container {
+  .container {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .input-section {
     flex-direction: column;
   }
 
-  input,
-  button {
+  .input-section input,
+  .input-section button {
     width: 100%;
     margin: 5px 0;
   }
-}
-
-input::placeholder {
-  color: #999;
 }
