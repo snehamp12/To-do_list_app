@@ -13,7 +13,7 @@ body {
   padding: 30px;
   border-radius: 10px;
   width: 400px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
   box-sizing: border-box;
 }
 
@@ -44,12 +44,11 @@ button {
   padding: 10px 15px;
   border-radius: 5px;
   cursor: pointer;
-  transition: 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
-  background: #3a7bd5;
-  color: white;
+  background-color: #3a7bd5;
 }
 
 ul {
@@ -82,16 +81,11 @@ li.done {
   cursor: pointer;
 }
 
-ul li:hover {
-  background: #f2f2f2;
-  cursor: pointer;
-}
-
-/* Mobile responsive styles */
+/* Mobile responsive */
 @media (max-width: 600px) {
   .container {
     width: 90%;
-    padding: 15px;
+    padding: 20px;
   }
 
   .input-section {
@@ -101,7 +95,6 @@ ul li:hover {
 
   input[type="text"] {
     width: 100%;
-    box-sizing: border-box;
     margin: 0;
   }
 
