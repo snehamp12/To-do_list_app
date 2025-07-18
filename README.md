@@ -17,7 +17,7 @@ It allows users to add, complete, and delete tasks with a smooth UI.
 - CSS
 - JavaScript (DOM Manipulation)
 
-![App Screenshot](screenshot.png)
+![Screenshot](screenshot.png)
 
 ### Author
 [Sneha MP](https://github.com/snehamp12)
