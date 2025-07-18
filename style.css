@@ -1,47 +1,32 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 body {
   font-family: 'Segoe UI', sans-serif;
   background: #f5f5f5;
-  min-height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
-  padding: 20px;
+  align-items: flex-start;
+  padding: 50px;
 }
 
-/* Main container */
 .container {
   background: #fff;
   padding: 30px;
   border-radius: 10px;
-  width: 100%;
-  max-width: 400px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
-/* Heading */
 h1 {
   text-align: center;
   margin-bottom: 20px;
   color: #333;
 }
 
-/* Input and button section */
-.input-container {
+.input-section {
   display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 10px;
-  width: 100%;
-  margin-bottom: 15px;
 }
 
-.input-container input {
+input {
   flex: 1;
   padding: 10px;
   font-size: 16px;
@@ -49,21 +34,19 @@ h1 {
   border-radius: 5px;
 }
 
-.input-container button {
-  padding: 10px 15px;
-  font-size: 16px;
+button {
   background: #4caf50;
   color: white;
   border: none;
+  padding: 10px 15px;
   border-radius: 5px;
   cursor: pointer;
 }
 
-.input-container button:hover {
-  background-color: #3a7bd5;
+button:hover {
+  background: #45a049;
 }
 
-/* Task list styles */
 ul {
   list-style: none;
   margin-top: 20px;
@@ -92,27 +75,4 @@ li.done {
   padding: 5px 8px;
   border-radius: 3px;
   cursor: pointer;
-}
-
-ul li:hover {
-  background: #f2f2f2;
-  cursor: pointer;
-}
-
-/* Responsive styles for mobile */
-@media (max-width: 600px) {
-  .input-container {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  .input-container input,
-  .input-container button {
-    width: 100%;
-  }
-
-  body {
-    align-items: flex-start;
-    padding-top: 40px;
-  }
 }
