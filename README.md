@@ -7,15 +7,17 @@ It allows users to add, complete, and delete tasks with a smooth UI.
 👉 [Click here to view the app](https://snehamp12.github.io/todo-list-app/)
 
 ### Features
-- ✅ Add new tasks
-- ✅ Mark tasks as completed
-- ✅ Delete tasks
-- ✅ Responsive design for mobile view
+- ➕ Add new tasks  
+- ✔️ Mark tasks as completed  
+- ❌ Delete tasks  
+- 📱 Mobile responsive design
 
 ### Tech Stack
 - HTML
 - CSS
 - JavaScript (DOM Manipulation)
+
+![App Screenshot](screenshot.png)
 
 ### Project Structure
 todo-list-app/
