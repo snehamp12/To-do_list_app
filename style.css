@@ -34,8 +34,11 @@ h1 {
 /* Input and button section */
 .input-container {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 10px;
-  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 15px;
 }
 
 .input-container input {
@@ -47,18 +50,17 @@ h1 {
 }
 
 .input-container button {
+  padding: 10px 15px;
+  font-size: 16px;
   background: #4caf50;
   color: white;
   border: none;
-  padding: 10px 15px;
   border-radius: 5px;
   cursor: pointer;
-  flex-shrink: 0;
 }
 
 .input-container button:hover {
   background-color: #3a7bd5;
-  color: white;
 }
 
 /* Task list styles */
@@ -101,6 +103,7 @@ ul li:hover {
 @media (max-width: 600px) {
   .input-container {
     flex-direction: column;
+    align-items: stretch;
   }
 
   .input-container input,
