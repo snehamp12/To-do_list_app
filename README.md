@@ -21,4 +21,3 @@ It allows users to add, complete, and delete tasks with a smooth UI.
 
 ### Author
 [Sneha MP](https://github.com/snehamp12)
-
