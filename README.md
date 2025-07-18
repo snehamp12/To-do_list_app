@@ -19,14 +19,6 @@ It allows users to add, complete, and delete tasks with a smooth UI.
 
 ![App Screenshot](screenshot.png)
 
-### Project Structure
-todo-list-app/
-├── index.html
-├── style.css
-└── script.js
-
-
-
 ### Author
 [Sneha MP](https://github.com/snehamp12)
 
