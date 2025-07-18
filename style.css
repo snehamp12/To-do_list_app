@@ -4,16 +4,17 @@ body {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding: 50px;
+  padding: 50px 20px;
   margin: 0;
 }
 
 .container {
   background: #fff;
-  padding: 30px;
+  padding: 20px;
   border-radius: 10px;
-  width: 400px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   box-sizing: border-box;
 }
 
@@ -26,6 +27,7 @@ h1 {
 .input-section {
   display: flex;
   gap: 10px;
+  flex-wrap: wrap;
 }
 
 input {
@@ -34,7 +36,7 @@ input {
   font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  box-sizing: border-box;
+  min-width: 0;
 }
 
 button {
@@ -44,11 +46,11 @@ button {
   padding: 10px 15px;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  white-space: nowrap;
 }
 
 button:hover {
-  background-color: #3a7bd5;
+  background: #45a049;
 }
 
 ul {
@@ -81,21 +83,14 @@ li.done {
   cursor: pointer;
 }
 
-/* Mobile responsive */
-@media (max-width: 600px) {
-  .container {
-    width: 90%;
-    padding: 20px;
-  }
+ul li:hover {
+  background: #f2f2f2;
+  cursor: pointer;
+}
 
+@media (max-width: 600px) {
   .input-section {
     flex-direction: column;
-    gap: 10px;
-  }
-
-  input[type="text"] {
-    width: 100%;
-    margin: 0;
   }
 
   button {
