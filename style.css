@@ -1,58 +1,67 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: 'Segoe UI', sans-serif;
   background: #f5f5f5;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  padding: 50px 20px;
-  margin: 0;
+  align-items: center;
+  padding: 20px;
 }
 
+/* Main container */
 .container {
   background: #fff;
-  padding: 20px;
+  padding: 30px;
   border-radius: 10px;
   width: 100%;
   max-width: 400px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-  box-sizing: border-box;
 }
 
+/* Heading */
 h1 {
   text-align: center;
   margin-bottom: 20px;
   color: #333;
 }
 
-.input-section {
+/* Input and button section */
+.input-container {
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
 }
 
-input {
+.input-container input {
   flex: 1;
   padding: 10px;
   font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  min-width: 0;
 }
 
-button {
+.input-container button {
   background: #4caf50;
   color: white;
   border: none;
   padding: 10px 15px;
   border-radius: 5px;
   cursor: pointer;
-  white-space: nowrap;
+  flex-shrink: 0;
 }
 
-button:hover {
-  background: #45a049;
+.input-container button:hover {
+  background-color: #3a7bd5;
+  color: white;
 }
 
+/* Task list styles */
 ul {
   list-style: none;
   margin-top: 20px;
@@ -88,12 +97,19 @@ ul li:hover {
   cursor: pointer;
 }
 
+/* Responsive styles for mobile */
 @media (max-width: 600px) {
-  .input-section {
+  .input-container {
     flex-direction: column;
   }
 
-  button {
+  .input-container input,
+  .input-container button {
     width: 100%;
+  }
+
+  body {
+    align-items: flex-start;
+    padding-top: 40px;
   }
 }
