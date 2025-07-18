@@ -1,18 +1,30 @@
 # To-Do List App
 
-A simple and clean to-do list web app built using **HTML**, **CSS**, and **JavaScript**.  
-Users can add, delete, and mark tasks as completed.
+A clean and interactive to-do list built using **HTML**, **CSS**, and **JavaScript**.  
+It allows users to add, complete, and delete tasks with a smooth UI.
 
-## Features
-- Add new tasks
-- Mark tasks as completed
-- Delete tasks
-- Fully responsive design
+### Live Demo
+👉 [Click here to view the app](https://snehamp12.github.io/todo-list-app/)
 
-## Live Demo
-[Click to View](https://snehamp12.github.io/todo-list-app)
+### Features
+- ✅ Add new tasks
+- ✅ Mark tasks as completed
+- ✅ Delete tasks
+- ✅ Responsive design for mobile view
 
-## Tech Stack
+### Tech Stack
 - HTML
 - CSS
-- JavaScript
+- JavaScript (DOM Manipulation)
+
+### Project Structure
+todo-list-app/
+├── index.html
+├── style.css
+└── script.js
+
+
+
+### Author
+[Sneha MP](https://github.com/snehamp12)
+
